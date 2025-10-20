@@ -13,12 +13,13 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model comida {
-  id        Int      @id @default(autoincrement())
-  nome      String
-  tipo      String
-  preco     Float
-  descricao String
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+model Bruxo {
+  id         Int      @id @default(autoincrement())
+  nome       String
+  casa       String
+  idade      Int
+  varinha    String
+  patrono    String
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
 }
