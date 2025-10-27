@@ -5,7 +5,8 @@ import * as bruxoController from '../controllers/bruxoController.js';
 
 const router = Router();
 
-router.get('/bruxos', bruxoController.ListarTodos);
-routes.get('/bruxos/:id', bruxoController.listarUm);
+router.get('/', bruxoController.ListarTodos);
+router.get('/:id', bruxoController.listarUm);
+router.delete('/:id', bruxoController.deletar);
 
 export default router;
